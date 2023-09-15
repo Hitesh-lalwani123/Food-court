@@ -1,0 +1,14 @@
+.main{
+    height: 2000px;
+
+}
+.header{
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background: url('../utils/mess_background_image.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    z-index: -10;
+}
