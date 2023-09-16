@@ -1,21 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./MainCSS.css";
 import Navbar from "./Navbar";
+import { ComponentCarousel } from "./ComponentCarousel";
 const Main = () => {
-  const [background,setBackground] = useState(0)
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY >= 480) {
-      setBackground(1);
-    }
-    else{
-      setBackground(0);
-    }
-  });
   return (
     <div className="main">
-      <Navbar background = {background}/>
-      <div className={`header`}></div>
+      <Navbar />
+      {/* <img src={images[1]} className="header" alt="" /> */}
+      {/* <div className="header"></div> */}
+      <div className="!h-screen w-full absolute top-0 backdrop-blur-md bg-transparent">
+        <ComponentCarousel/>
+      </div>
     </div>
   );
 };
