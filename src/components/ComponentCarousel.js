@@ -17,8 +17,8 @@ export function ComponentCarousel() {
           {new Array(length).fill("").map((_, i) => (
             <span
               key={i}
-              className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                activeIndex === i ? "w-8 bg-gray-700" : "w-4 bg-white"
+              className={`block h-2 cursor-pointer rounded-2xl transition-all content-[''] ${
+                activeIndex === i ? "w-8 bg-white" : "w-4 bg-gray-600"
               }`}
               onClick={() => setActiveIndex(i)}
             />
@@ -76,6 +76,9 @@ export function ComponentCarousel() {
     >
 
       {/* content starts here */}
+      
+
+      
       <div className="relative h-full w-full">
         <img
           src={images[0]}
@@ -108,7 +111,7 @@ export function ComponentCarousel() {
             </div>
           </div>
         </div>
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75 opacity-20">
           <div className="w-3/4 text-center md:w-2/4">
             <Typography
               variant="h1"
@@ -135,7 +138,6 @@ export function ComponentCarousel() {
           </div>
         </div>
       </div>
-
       <div className="relative h-full w-full">
         <img
           src={images[1]}
@@ -168,7 +170,66 @@ export function ComponentCarousel() {
             </div>
           </div>
         </div>
+        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75 opacity-20">
+          <div className="w-3/4 text-center md:w-2/4">
+            <Typography
+              variant="h1"
+              color="white"
+              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+            >
+              Food - The Ultimate Energy
+            </Typography>
+            <Typography
+              variant="lead"
+              color="white"
+              className="mb-12 opacity-80"
+            >
+              Happiness comes from the stomatch first and then from the outside.
+            </Typography>
+            <div className="flex justify-center gap-2">
+              <Button size="lg" color="white">
+                Explore
+              </Button>
+              <Button size="lg" color="white" variant="text">
+                Gallery
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="relative h-full w-full">
+        <img
+          src={images[2]}
+          alt="image 1"
+          className="h-full w-full object-cover"
+        />
         <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+          <div className="w-3/4 text-center md:w-2/4">
+            <Typography
+              variant="h1"
+              color="white"
+              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+            >
+              Food - The Ultimate Energy
+            </Typography>
+            <Typography
+              variant="lead"
+              color="white"
+              className="mb-12 opacity-80"
+            >
+              Happiness comes from the stomatch first and then from the outside.
+            </Typography>
+            <div className="flex justify-center gap-2">
+              <Button size="lg" color="white">
+                Explore
+              </Button>
+              <Button size="lg" color="white" variant="text">
+                Gallery
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75 opacity-20">
           <div className="w-3/4 text-center md:w-2/4">
             <Typography
               variant="h1"

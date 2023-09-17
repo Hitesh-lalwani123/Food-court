@@ -24,10 +24,10 @@ const Navbar = () => {
       className={`flex flex-row p-4 sticky z-10 scroll-m-2 top-0 transition-position duration-200 bg-transparent backdrop-blur-md ${shadow}`}
     >
       <ul className={`grid grid-cols-4 mx-auto font-bold ${textColor}`}>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>About</li>
-        <li>Contact Us</li>
+        <li className="cursor-pointer hover:text-gray-500">Home</li>
+        <li className="cursor-pointer hover:text-gray-500">Menu</li>
+        <li className="cursor-pointer hover:text-gray-500">About</li>
+        <li className="cursor-pointer hover:text-gray-500">Contact Us</li>
       </ul>
     </div>
   );
