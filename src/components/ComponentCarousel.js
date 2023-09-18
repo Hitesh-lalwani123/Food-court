@@ -3,14 +3,15 @@ import {
   IconButton,
   Typography,
   Button,
+  Navbar,
 } from "@material-tailwind/react";
 import images from "../helpers/BackgroundImages";
 export function ComponentCarousel() {
   return (
     <Carousel
       className="rounded-sm"
-      // autoplay="false"
-      // autoplayDelay="4000"
+      autoplay="true"
+      autoplayDelay="4000"
       loop="true"
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -78,7 +79,6 @@ export function ComponentCarousel() {
       {/* content starts here */}
       
 
-      
       <div className="relative h-full w-full">
         <img
           src={images[0]}
